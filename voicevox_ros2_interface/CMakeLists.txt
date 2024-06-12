@@ -23,12 +23,12 @@ rosidl_generate_interfaces(
 #    ERROR_VARIABLE error_output
 #    WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/..
 #)
-message(STATUS "Output of setup.bash: ${output}")
-if(result EQUAL 0)
-    message(STATUS "Command executed successfully. Output: ${output}")
-else()
-    message(FATAL_ERROR "Command failed. Error output: ${error_output}")
-endif()
+#message(STATUS "Output of setup.bash: ${output}")
+#if(result EQUAL 0)
+#    message(STATUS "Command executed successfully. Output: ${output}")
+#else()
+#    message(FATAL_ERROR "Command failed. Error output: ${error_output}")
+#endif()
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
